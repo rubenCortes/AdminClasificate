@@ -1,0 +1,13 @@
+<mat-list-item class=fila-pais>
+  <span class="celda-pais">
+  {{nombre}} 
+  </span>
+  <button mat-button (click)="accionUsuario('editar')">
+    Editar
+    <mat-icon mat-list-icon>mode_edit</mat-icon>
+  </button>
+  <button mat-button (click)="accionUsuario('borrar')">
+    Borrar
+    <mat-icon md-list-icon>delete_forever</mat-icon>
+  </button>
+</mat-list-item>

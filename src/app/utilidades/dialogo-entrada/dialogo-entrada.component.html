@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Descripción</h1>
+<div mat-dialog-content class="alto-contenido">
+  <mat-input-container>
+    <input matInput #nombre placeholder="Nombre:" [value]="datosEntrada.nombre" (keyup.enter)="dialogRef.close({id: datosEntrada.id, nombre: nombre.value})" >
+  </mat-input-container>
+  <p>Id: {{datosEntrada.id}} nombre: {{nombre.value}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close({id: datosEntrada.id, nombre: nombre.value})">Aceptar</button>
+  <button mat-button (click)="dialogRef.close()">Cancelar</button>
+</div>
